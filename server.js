@@ -30,6 +30,7 @@ const COLLECTIONS = [
   "crash_reports",
   "incident_reports",
   "officer_messages",
+  "users",
   "history"
 ];
 
@@ -107,3 +108,4 @@ app.post("/api/save", (req, res) => {
 // ------------------------------
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`CAD API running on ${PORT}`));
+
