@@ -18,6 +18,7 @@ if (!fs.existsSync(DATA_DIR)) {
 // List of CAD collections
 const COLLECTIONS = [
   "civilians",
+  "charactors",
   "vehicles",
   "units_police",
   "units_fire",
@@ -108,4 +109,5 @@ app.post("/api/save", (req, res) => {
 // ------------------------------
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`CAD API running on ${PORT}`));
+
 
